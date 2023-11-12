@@ -7,11 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ToDoAppTest {
 
-    ToDoApp taskClass = new ToDoApp();
-    List<String> taskList = new ArrayList<>();
     @Test
-    void addTaskToList() {
+    public void taskListIsEmpty() {
+        ToDoApp taskList = new ToDoApp();
 
-        assertTrue(taskList, taskClass.);
+        assertTrue(taskList.getTaskList().isEmpty());
     }
 }

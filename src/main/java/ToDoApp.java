@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.BitSet;
 import java.util.List;
 
 public class ToDoApp {
@@ -7,5 +8,9 @@ public class ToDoApp {
 
     public ToDoApp() {
         this.taskList = new ArrayList<>();
+    }
+
+    public List<String> getTaskList() {
+        return taskList;
     }
 }
