@@ -13,4 +13,17 @@ public class ToDoApp {
     public List<String> getTaskList() {
         return taskList;
     }
+
+    public List<String> removeTaskFromList() {
+        taskList.remove("Go shopping");
+        return getTaskList();
+    }
+
+    public List<String> addTaskToList() {
+        taskList.add("Go shopping");
+        taskList.add("Get books");
+        return getTaskList();
+    }
+
+
 }

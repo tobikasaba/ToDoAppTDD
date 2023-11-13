@@ -7,10 +7,20 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ToDoAppTest {
 
-    @Test
-    public void taskListIsEmpty() {
-        ToDoApp taskList = new ToDoApp();
+    ToDoApp taskList = new ToDoApp();
+    List<String> testList = new ArrayList<>();
 
-        assertTrue(taskList.getTaskList().isEmpty());
+    @Test
+    void addTaskToList() {
+        testList.add("Go shopping");
+        testList.add("Get books");
+        assertEquals(testList, taskList.addTaskToList());
+    }
+
+    @Test
+    void removeTaskFromList() {
+        List<String> testList = new ArrayList<>();
+        testList.remove("Go shopping");
+        assertEquals(testList, taskList.removeTaskFromList());
     }
 }
