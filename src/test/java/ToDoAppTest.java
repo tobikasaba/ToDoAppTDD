@@ -19,7 +19,6 @@ public class ToDoAppTest {
 
     @Test
     void removeTaskFromList() {
-        List<String> testList = new ArrayList<>();
         testList.remove("Go shopping");
         assertEquals(testList, taskList.removeTaskFromList());
     }
